@@ -1,14 +1,10 @@
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import styles from './LinkButton.module.css'
 
-function LinkButton(url) {
+function LinkButton({to,text}) {
 
-    return (
-        
-        <a href="/newproject" className={styles.btn} >
-            Criar projeto
-        </a>
-        
+    return (        
+        <Link className={styles.btn} to={to} >{text}</Link>
     )
 
 }
