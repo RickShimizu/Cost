@@ -12,7 +12,7 @@ function NewProject() {
         project.cost = 0;
         project.services = []
 
-        fetch('http://localhost:5000/projects', {
+        fetch('https://cost-api.vercel.app/projects', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

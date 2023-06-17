@@ -10,7 +10,7 @@ function ProjectForm({handleSubmit, btnText, ProjectData }) {
     const [project, setProject] = useState(ProjectData || {})
 
     useEffect(() => {
-    fetch('http://localhost:5000/categories', {
+    fetch('https://cost-api.vercel.app/categories', {
         method: 'GET',
         headers: {
             'Content-Type' : 'application/json',

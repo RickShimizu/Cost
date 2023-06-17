@@ -20,7 +20,7 @@ const [projectMessage, setProjectsMessage] = useState('')
 
     useEffect(() =>{
          setTimeout(() => {
-            fetch('http://localhost:5000/projects',{
+            fetch('https://cost-api.vercel.app/projects',{
             method: 'GET',
             headers: {
                 'Context-Type': 'application/json'
@@ -38,7 +38,7 @@ const [projectMessage, setProjectsMessage] = useState('')
 
     function removeProject(id){
 
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`https://cost-api.vercel.app/projects/${id}`, {
             method:'DELETE',
             headers:{
                 'Content-Type' : 'application/json'
