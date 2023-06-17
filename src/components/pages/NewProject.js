@@ -1,6 +1,7 @@
+// eslint-disable-next-line
 import { useNavigate } from 'react-router-dom'
 import ProjectForm from '../project/ProjectForm'
-// import styles from '../pages/NewProject.module.css'
+import styles from './NewProject.module.css'
 
 
 
