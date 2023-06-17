@@ -7,6 +7,7 @@ import styles from './New.module.css'
 function NewProject() {
     const history = useNavigate()
 
+
     function createPost(project) {
 
         project.cost = 0;
